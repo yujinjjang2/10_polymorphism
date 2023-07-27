@@ -66,7 +66,7 @@ public class PolyService {
 		// 객체 배열: 같은 객체 참조 자료형의 변수를 하나의 묶음으로 다루는것
 					// 부모타입 참조 자료형의 변수를 하나의 묶음으로 다루는것
 		
-		Car[] arr = new Car[3]; // 부모타입 참조변수 배열 선언 및 할당
+		Car[] arr = new Car[4]; // 부모타입 참조변수 배열 선언 및 할당
 		// 각 배열 요소가 Car 타입 참조변수
 		
 		arr[0] = car; // Car 주소
@@ -74,6 +74,11 @@ public class PolyService {
 		arr[1] = car2; // Tesla 주소
 		
 		arr[2] = car3; // Spark 주소
+		
+		// 원래는 tesla.getBatteryCapacity()를 사용할 수 있어야 하지만,
+		// Car 배열변수를 선언했기 때문에 부모화되어
+		// 함수를 사용할 수 없음
+		arr[3] = tesla;
 		
 		for(int i = 0; i < arr.length; i++) {
 			System.out.println(i + "번째 인덱스의 엔진" + arr[i].getEngine());
