@@ -54,7 +54,7 @@ public class AbstractService {
 		Animal[] arr = new Animal[2];
 		// Animal 참조변수 배열 선언 및 할당
 		
-		arr[0] = new Person("사람", "잡식", "김사람");  // 아빠한테 질문: 이렇게 다형성 사용하면 Animal것만 사용할 수 있는데 어떻게 자식 오버라이딩한 메소드 결과가 나오는거지?
+		arr[0] = new Person("사람", "잡식", "김사람");
 		// Animal 부모 = Person 자식(다형성 중 업캐스팅)
 		
 		arr[1] = new Fish("물고기", "잡식");
